@@ -1,0 +1,21 @@
+html, body {
+  margin : 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  font-family: helvetica;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.tour {
+  margin-top: 20px;
+}
