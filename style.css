@@ -3,19 +3,114 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: grey;
   font-family: helvetica;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 12px;
+nav {
+  z-index: 100;
+  position: absolute;
+/*  position: fixed;*/
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4 1.6s ease-out forwards;
+
+}
+nav > a {
   text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  padding: 0 20px;
+  cursor: pointer;
 }
 
-.tour {
-  margin-top: 20px;
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
+
+.bloc {
+  width: 800px;
+  height: 100%;
+  flex-shrink: 0;
+  padding: 20px 20px 130px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bloc h1 {
+  display: flex;
+  flex-direction: column;
+}
+.bloc h1 > span {
+  font-size: 50px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.bloc h1 > span:nth-child(1) {
+  animation: apparition 0.8s 0.2s ease-out forwards;
+}
+
+.bloc h1 > span:nth-child(2) {
+  animation: apparition 0.8s 0.4s ease-out forwards;
+}
+
+.bloc h1 > span:nth-child(3) {
+  animation: apparition 0.8s 0.6s ease-out forwards;
+}
+
+.bloc p {
+  font-size: 25px;
+  position: relative;
+  left: 10px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 0.8s ease-out forwards;
+}
+
+.box-btn {
+  margin-top: 100px;
+}
+
+.box-btn > a {
+  position: relative;
+  left: 10px;
+  padding: 12px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid grey;
+  border-radius: 3px;
+  opacity: 0;
+  animation: apparition 0.8s 1s ease-out forwards;
+}
+
+.box-btn:hover {
+  opacity: 0.8;
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+    transform: translateY(-30px);
+  }
+}
+
