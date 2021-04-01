@@ -6,22 +6,28 @@
   <title>VirtualTour</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <nav>
-    <a href="#">home</a>
-    <a href="#">about</a>
-    <a href="#">contact</a>
-  </nav>
+<nav>
+  <div class="poo">
+    <a href="#" class="link link--anim">home</a>
+    <a href="#" class="link link--anim">about</a>
+    <a href="#" class="link link--anim">contact</a>
+</nav>
+
   <div class="home">
     <div class="bloc">
       <h1>
         <span>360°</span>
         <span>VIRTUAL</span>
         <span>TOUR</span>
-        <p>When art meets virtual reality</p>
+        <p>when art meets virtual reality</p>
     <div class="box-btn">
       <a href="#">view demo</a>
     </div>
   </div>
+  <script>
+    window.addEventListener("load", () => {
+        document.body.classList.remove("loading-anim");
+    });
+  </script>
 </body>
 </html>
