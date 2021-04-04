@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VirtualTour</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="easyScrollDots.min.css" />
+
 </head>
 <nav>
     <a href="index.html" class="link link--anim">home</a>
@@ -13,21 +15,49 @@
 </nav>
 
   <div class="home">
-    <div class="bloc">
+    <section class="bloc">
+      <div>
+          <div class="scroll-indicator" id="section01" data-scroll-indicator-title="First section"></div>
+      </div>
       <h1>
         <span>360°</span>
-        <span>VIRTUAL</span>
-        <span>TOUR</span>
-        <p>when art meets virtual reality</p>
-    <div class="box-btn">
-      <a href="demo.html">view demo</a>
-    </div>
-    <img src="images/360.svg" alt="virtual tour logo">
-  </div>
+        <span>Virtual</span>
+        <span>Tour</span>
+      </h1>
+      <p>when art meets 3D</p>
+      <img src="images/360-grey.svg" alt="virtual tour logo">
+    </section>
+
+    <section class="virtual-tour">
+      <div>
+          <div class="scroll-indicator" id="section02" data-scroll-indicator-title="Second section"></div>
+      </div>
+      <iframe src="https://app.lapentor.com/sphere/virtual-tour-test-1614678608"
+      frameborder="0" width="80%" height="500px" scrolling="no" allow="vr,gyroscope,accelerometer"
+      allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true"
+      msallowfullscreen="true"></iframe>
+    </section>
+</div>
+
+
   <script>
-    window.addEventListener("load", () => {
-        document.body.classList.remove("loading-anim");
+    easyScrollDots({
+
+      // sets to true if you have a fixed navigation
+      'fixedNav': false,
+
+      // unique ID of your fixed navigation
+      'fixedNavId': '',
+
+      // set to true if your navigation is only sticky when scrolling up
+      'fixedNavUpward': false,
+
+      // the amount of pixels you wish to offset the scroll amount by
+      'offset': 30
+
     });
   </script>
+  <script type="text/javascript" src="easyScrollDots.min.js"></script>
+
 </body>
 </html>
