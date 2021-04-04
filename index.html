@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VirtualTour</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="easyScrollDots.min.css" />
+  <link rel="stylesheet" type="text/css" href="dist/easyScrollDots.min.css"/>
 
 </head>
 <nav>
@@ -17,7 +17,7 @@
   <div class="home">
     <section class="bloc">
       <div>
-          <div class="scroll-indicator" id="section01" data-scroll-indicator-title="First section"></div>
+        <div class="scroll-indicator" id="section01" data-scroll-indicator-title="First Section"></div>
       </div>
       <h1>
         <span>360°</span>
@@ -30,7 +30,7 @@
 
     <section class="virtual-tour">
       <div>
-          <div class="scroll-indicator" id="section02" data-scroll-indicator-title="Second section"></div>
+        <div class="scroll-indicator" id="section02" data-scroll-indicator-title="First Section"></div>
       </div>
       <iframe src="https://app.lapentor.com/sphere/virtual-tour-test-1614678608"
       frameborder="0" width="80%" height="500px" scrolling="no" allow="vr,gyroscope,accelerometer"
@@ -41,6 +41,10 @@
 
 
   <script>
+    window.addEventListener("load", () => {
+        document.body.classList.remove("loading-anim");
+    });
+
     easyScrollDots({
 
       // sets to true if you have a fixed navigation
@@ -57,7 +61,7 @@
 
     });
   </script>
-  <script type="text/javascript" src="easyScrollDots.min.js"></script>
+  <script src="dist/easyScrollDots.js"></script>
 
 </body>
 </html>
