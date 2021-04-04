@@ -145,14 +145,14 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .bloc {
-  width: 500px;
-  height: 50vh;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
+.bloc {
+width: 500px;
+height: 100vh;
+flex-shrink: 0;
+display: flex;
+justify-content: center;
+flex-direction: column;
+position: relative;
 }
 
 .about {
@@ -203,7 +203,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
   .bloc {
   width: 800px;
-  height: 50vh;
+  height: 100vh;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
