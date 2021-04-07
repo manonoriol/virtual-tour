@@ -428,12 +428,11 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   display: flex;
   flex-direction: column;
   font-family: helvetica;
-  font-weight: 700px;
   letter-spacing: 3px;
-  line-height: 78px;
+  line-height: 100px;
 }
 .bloc h1 > span {
-  font-size: 50px;
+  font-size: 90px;
   display: inline-block;
   opacity: 0;
   transform: translateY(-30px);
