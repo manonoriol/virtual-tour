@@ -66,8 +66,9 @@ nav {
  }
 
  .about-text {
-   width: 800px;
+   width: 70%;
    height: 100vh;
+   line-height: 40px;
    display: flex;
    justify-content: center;
    flex-direction: column;
@@ -134,8 +135,9 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 }
 
 .about-text {
-  width: 800px;
+  width: 70%;
   height: 100vh;
+  line-height: 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -203,8 +205,9 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   }
 
   .about-text {
-    width: 500px;
-    min-height: 100vh;
+    width: 70%;
+    height: 100vh;
+    line-height: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -260,8 +263,9 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   }
 
   .about-text {
-    width: 800px;
-    min-height: 100vh;
+    width: 70%;
+    height: 100vh;
+    line-height: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -318,8 +322,9 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
 
   .about-text {
-    width: 75%;
-    min-height: 100vh;
+    width: 70%;
+    height: 100vh;
+    line-height: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -375,9 +380,9 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   }
 
   .about-text {
-    width: 82%;
-    min-height: 100vh;
-    display: flex;
+    width: 70%;
+    height: 100vh;
+    line-height: 40px;
     justify-content: center;
     flex-direction: column;
     position: relative;
