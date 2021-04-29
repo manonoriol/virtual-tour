@@ -56,7 +56,7 @@ nav {
 
  .about {
  font-family: 'Montserrat', sans-serif;
- width: 85%;
+ width: 100%;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -125,7 +125,7 @@ img {
 
 .about {
 font-family: 'Montserrat', sans-serif;
-width: 85%;
+width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -195,7 +195,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
   .about {
   font-family: 'Montserrat', sans-serif;
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +253,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
   .about {
   font-family: 'Montserrat', sans-serif;
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,7 +311,8 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
   .about {
   font-family: 'Montserrat', sans-serif;
-  width: 85%;
+  width: 100%;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,7 +371,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
   .about {
   font-family: 'Montserrat', sans-serif;
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
