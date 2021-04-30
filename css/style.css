@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Krona One';
+    src: url('fonts/KronaOne-Regular.ttf') format('truetype');
+}
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
@@ -467,7 +471,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 .bloc h1 {
   display: flex;
   flex-direction: column;
-  font-family: helvetica;
+  font-family: 'Krona One';
   letter-spacing: 3px;
   line-height: 100px;
 }
