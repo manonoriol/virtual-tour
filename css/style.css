@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
 html, body {
-  margin : 0;
+  margin : 0 0 0 100px;
   padding: 0;
   width: 100%;
   height: 100vh;
@@ -14,19 +14,16 @@ html, body {
 }
 
 nav {
-  z-index: 100;
-  width: 100%;
-  padding: 10px 80px 10px 70px;
+  width: 65%;
+  padding: 30px 80px 40px 0;
   letter-spacing: 1px;
-  margin: 30px 0 0 0;
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   opacity: 0;
   transform: translateY(-50px);
   animation: apparition 0.3s 1.3s ease-out forwards;
-
 }
 
 /*
@@ -38,9 +35,8 @@ nav {
 
  .bloc {
    width: 100%;
-   margin: 30px 0 0 460px;
-   padding: 0 0 0 100px;
-   height: 65vh;
+   padding: 0 0 0 20px;
+   height: 70vh;
    position: relative;
    display: flex;
    flex-direction: column;
@@ -64,7 +60,7 @@ nav {
  img {
    width: 13%;
    opacity: 0.6;
-   margin: 17px 0 80px 80px;
+   margin: 17px 0 50px 80px;
  }
 
  .about {
@@ -83,6 +79,7 @@ nav {
    width: 70%;
    height: 100vh;
    line-height: 40px;
+   text-align: justify;
    display: flex;
    justify-content: center;
    flex-direction: column;
@@ -103,7 +100,7 @@ nav {
   height: 70vh;
   margin-bottom: 50px;
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -117,9 +114,9 @@ nav {
 @media (min-width: 1025px) and (max-width: 1280px) {
 
 .bloc {
-  width: 800px;
-  height: 65vh;
-  margin: 75px 0 0 -380px;
+  width: 100%;
+  height: 70vh;
+  padding: 0 0 0 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -140,8 +137,8 @@ nav {
 }
 
 img {
-  width: 30%;
-  opacity: 0.2;
+  width: 13%;
+  opacity: 0.7;
   margin: 15px 0 80px 0;
 }
 
@@ -159,6 +156,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   width: 70%;
   height: 100vh;
   line-height: 40px;
+  text-align: justify;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -195,7 +193,6 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   .bloc {
   width: 500px;
   height: 70vh;
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -236,6 +233,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
     width: 70%;
     height: 100vh;
     line-height: 40px;
+    text-align: justify;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -272,7 +270,6 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   .bloc {
   width: 800px;
   height: 70vh;
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -301,6 +298,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
     width: 70%;
     height: 100vh;
     line-height: 40px;
+    text-align: justify;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -337,7 +335,6 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   .bloc {
   width: 500px;
   height: 70vh;
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -369,6 +366,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
     width: 70%;
     height: 100vh;
     line-height: 40px;
+    text-align: justify;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -405,7 +403,6 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   .bloc {
   width: 80%;
   height: 100vh;
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -434,6 +431,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
     width: 70%;
     height: 100vh;
     line-height: 40px;
+    text-align: justify;
     justify-content: center;
     flex-direction: column;
     position: relative;
@@ -506,8 +504,9 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   }
 
 .home {
-  width: 100%;
+  width: 73%;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -536,7 +535,6 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 .bloc p {
   font-size: 30px;
   position: relative;
-  left: 10px;
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 0.8s 0.8s ease-out forwards;
