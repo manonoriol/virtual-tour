@@ -1,8 +1,9 @@
 @font-face {
-    font-family: 'Krona One';
-    src: url('fonts/KronaOne-Regular.ttf') format('truetype');
+    font-family: krona one;
+    src: url("fonts/KronaOne-Regular.otf") format("opentype");
 }
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 html, body {
@@ -471,7 +472,7 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 .bloc h1 {
   display: flex;
   flex-direction: column;
-  font-family: 'Krona One';
+  font-family: 'Lato', sans-serif;
   letter-spacing: 3px;
   line-height: 100px;
 }
