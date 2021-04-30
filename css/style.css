@@ -1,10 +1,4 @@
-@font-face {
-    font-family: krona one;
-    src: url("fonts/KronaOne-Regular.otf") format("opentype");
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
 html, body {
   margin : 0;
@@ -12,18 +6,22 @@ html, body {
   width: 100%;
   height: 100vh;
   background-color: white;
-  color: grey;
-  font-family: helvetica;
+  color: black;
+  font-family: 'Tajawal', sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 nav {
   z-index: 100;
   width: 100%;
+  padding: 10px 80px 10px 70px;
+  letter-spacing: 1px;
+  margin: 30px 0 0 0;
   height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   opacity: 0;
   transform: translateY(-50px);
@@ -39,12 +37,22 @@ nav {
 @media (min-width: 1281px) {
 
  .bloc {
-   width: 800px;
+   width: 100%;
+   margin: 30px 0 0 460px;
+   padding: 0 0 0 100px;
    height: 65vh;
-   margin: 75px 0 0 -380px;
    position: relative;
    display: flex;
    flex-direction: column;
+   justify-content: flex-start;
+ }
+
+ .bloc h1 {
+   display: flex;
+   flex-direction: column;
+   letter-spacing: 3px;
+   line-height: 100px;
+   font-size: 70px;
  }
 
  .demo-click a {
@@ -54,20 +62,21 @@ nav {
  }
 
  img {
-   width: 30%;
-   opacity: 0.2;
-   margin: 15px 0 80px 0;
+   width: 13%;
+   opacity: 0.6;
+   margin: 17px 0 80px 80px;
  }
 
  .about {
- font-family: 'Montserrat', sans-serif;
- width: 100%;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- opacity: 0;
- animation: apparition 0.4s 0.4s ease-out forwards;
+  font-family: 'Tajawal', sans-serif;
+  width: 100%;
+  margin: 0 0 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: apparition 0.4s 0.4s ease-out forwards;
  }
 
  .about-text {
@@ -116,6 +125,14 @@ nav {
   flex-direction: column;
 }
 
+.bloc h1 {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 3px;
+  line-height: 100px;
+  font-size: 90px;
+}
+
 .demo-click a {
   width: 100%;
   display: flex;
@@ -129,7 +146,6 @@ img {
 }
 
 .about {
-font-family: 'Montserrat', sans-serif;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -186,6 +202,14 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   position: relative;
   }
 
+  .bloc h1 {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 3px;
+    line-height: 100px;
+    font-size: 90px;
+  }
+
   .demo-click a {
     width: 100%;
     display: flex;
@@ -199,7 +223,6 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   }
 
   .about {
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -256,8 +279,15 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   position: relative;
 }
 
+.bloc h1 {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 3px;
+  line-height: 100px;
+  font-size: 90px;
+}
+
   .about {
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -314,8 +344,16 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   position: relative;
   }
 
+  .bloc h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    line-height: 100px;
+    font-size: 90px;
+  }
+
   .about {
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
   margin-top: 70px;
   display: flex;
@@ -374,8 +412,15 @@ animation: apparition 0.4s 0.4s ease-out forwards;
   position: relative;
 }
 
+.bloc h1 {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 3px;
+  line-height: 100px;
+  font-size: 70px;
+}
+
   .about {
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -462,22 +507,15 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
 .home {
   width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 
-.bloc h1 {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 3px;
-  line-height: 100px;
-}
 .bloc h1 > span {
-  font-size: 90px;
   display: inline-block;
   opacity: 0;
   transform: translateY(-30px);
@@ -496,7 +534,6 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 }
 
 .bloc p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   position: relative;
   left: 10px;
@@ -507,7 +544,6 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
 .box-btn {
   margin-top: 10px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .box-btn > a {
@@ -531,19 +567,21 @@ animation: apparition 0.4s 0.4s ease-out forwards;
 
 
 .contact {
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
   line-height: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin: 0 0 0 280px;
   opacity: 0;
   animation: apparition 0.4s 0.4s ease-out forwards;
 }
 
 address > ul {
   list-style-type: none;
+  font-style: normal;
+  line-height: 40px;
   padding: 0;
   margin: 0;
 }
