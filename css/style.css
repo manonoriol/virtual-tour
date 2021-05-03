@@ -775,7 +775,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 0 0 280px;
   opacity: 0;
   animation: apparition 0.4s 0.4s ease-out forwards;
 }
