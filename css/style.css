@@ -182,7 +182,6 @@ nav {
   animation: apparition 0.8s 0.8s ease-out forwards;
 }
 
-
 .demo-click a {
   width: 100%;
   display: flex;
@@ -771,6 +770,7 @@ html, body {
 .contact {
   width: 100%;
   line-height: 25px;
+  margin: 0 0 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
