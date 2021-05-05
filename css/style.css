@@ -84,7 +84,7 @@
 
  .about-text {
    width: 70%;
-   height: 100vh;
+   height: 80vh;
    line-height: 40px;
    text-align: justify;
    display: flex;
@@ -95,7 +95,7 @@
 
  .contact-text {
    width: 800px;
-   height: 100vh;
+   height: 80vh;
    display: flex;
    justify-content: center;
    flex-direction: column;
@@ -200,7 +200,7 @@ iframe {
 
 .about-text {
   width: 70%;
-  height: 100vh;
+  height: 80vh;
   line-height: 40px;
   text-align: justify;
   display: flex;
@@ -212,7 +212,7 @@ iframe {
 
 .contact-text {
   width: 800px;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
