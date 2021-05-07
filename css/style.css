@@ -1,3 +1,9 @@
+/*@font-face {
+  font-family: 'Krona One';
+  src: url("fonts/krona-one.woff") format("woff"),  Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+
+  url("fonts/krona-one.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 }*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
 /*
@@ -22,7 +28,7 @@
 
   .home {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -55,19 +61,27 @@
    opacity: 0;
    transform: translateY(-30px);
    animation: apparition 0.8s 0.8s ease-out forwards;
+   margin-bottom: 25px;
  }
 
 
  .demo-click a {
    width: 100%;
    display: flex;
+   text-decoration: none;
    justify-content: flex-start;
  }
+
+  .demo-click span {
+    margin-top: 8px;
+    color: #4B4B4B;
+    opacity: 0.8;
+  }
 
  .demo-click img {
    width: 2%;
    opacity: 0.6;
-   margin: 15px 0 80px 0;
+   margin: 0 20px 0 0;
  }
 
  .about {
@@ -139,7 +153,7 @@ iframe {
 
   .home {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -172,18 +186,27 @@ iframe {
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 0.8s 0.8s ease-out forwards;
+  margin-bottom: 30px;
 }
+
 
 .demo-click a {
   width: 100%;
   display: flex;
+  text-decoration: none;
   justify-content: flex-start;
 }
+
+ .demo-click span {
+   margin-top: 8px;
+   color: #4B4B4B;
+   opacity: 0.8;
+ }
 
 .demo-click img {
   width: 2%;
   opacity: 0.6;
-  margin: 15px 0 80px 0;
+  margin: 0 20px 0 0;
 }
 
 .about {
@@ -289,19 +312,27 @@ iframe {
     opacity: 0;
     transform: translateY(-30px);
     animation: apparition 0.8s 0.8s ease-out forwards;
+    margin-bottom: 25px;
   }
 
 
   .demo-click a {
     width: 100%;
     display: flex;
+    text-decoration: none;
     justify-content: flex-start;
   }
 
+   .demo-click span {
+     margin-top: 8px;
+     color: #4B4B4B;
+     opacity: 0.8;
+   }
+
   .demo-click img {
-    width: 3%;
+    width: 2%;
     opacity: 0.6;
-    margin: 15px 0 80px 0;
+    margin: 0 20px 0 0;
   }
 
   .about {
@@ -393,33 +424,33 @@ iframe {
     }
 
     .bloc p {
-      font-size: 30px;
-      position: relative;
-      opacity: 0;
-      transform: translateY(-30px);
-      animation: apparition 0.8s 0.8s ease-out forwards;
-    }
+       font-size: 30px;
+       position: relative;
+       opacity: 0;
+       transform: translateY(-30px);
+       animation: apparition 0.8s 0.8s ease-out forwards;
+       margin-bottom: 25px;
+     }
 
 
-    .bloc h1 {
-      display: flex;
-      flex-direction: column;
-      letter-spacing: 3px;
-      line-height: 100px;
-      font-size: 90px;
-    }
+     .demo-click a {
+       width: 100%;
+       display: flex;
+       text-decoration: none;
+       justify-content: flex-start;
+     }
 
-    .demo-click a {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-    }
+      .demo-click span {
+        margin-top: 8px;
+        color: #4B4B4B;
+        opacity: 0.8;
+      }
 
-    .demo-click img {
-      width: 3%;
-      opacity: 0.6;
-      margin: 15px 0 80px 0;
-    }
+     .demo-click img {
+       width: 2%;
+       opacity: 0.6;
+       margin: 0 20px 0 0;
+     }
 
     .about {
      font-family: 'Tajawal', sans-serif;
@@ -520,20 +551,33 @@ iframe {
   }
 
   .bloc p {
-    font-size: 30px;
-    position: relative;
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: apparition 0.8s 0.8s ease-out forwards;
-  }
+     font-size: 30px;
+     position: relative;
+     opacity: 0;
+     transform: translateY(-30px);
+     animation: apparition 0.8s 0.8s ease-out forwards;
+     margin-bottom: 25px;
+   }
 
 
+   .demo-click a {
+     width: 100%;
+     display: flex;
+     text-decoration: none;
+     justify-content: flex-start;
+   }
 
-  .demo-click img {
-    width: 2%;
-    opacity: 0.6;
-    margin: 15px 0 80px 0;
-  }
+    .demo-click span {
+      margin-top: 8px;
+      color: #4B4B4B;
+      opacity: 0.8;
+    }
+
+   .demo-click img {
+     width: 2%;
+     opacity: 0.6;
+     margin: 0 20px 0 0;
+   }
 
   .about {
    font-family: 'Tajawal', sans-serif;
@@ -605,7 +649,7 @@ html, body {
 
 .home {
   width: 100%;
-  height: 64vh;
+  height: 76vh;
   margin: 0 0 0 20px;
   padding: 0;
   display: flex;
@@ -632,18 +676,33 @@ html, body {
 }
 
 .bloc p {
-  font-size: 18px;
-  position: relative;
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: apparition 0.8s 0.8s ease-out forwards;
-}
+   font-size: 17px;
+   position: relative;
+   opacity: 0;
+   transform: translateY(-30px);
+   animation: apparition 0.8s 0.8s ease-out forwards;
+   margin-bottom: 25px;
+ }
 
-.demo-click img {
-  width: 3%;
-  opacity: 0.6;
-  margin: 15px 0 80px 0;
-}
+
+ .demo-click a {
+   width: 100%;
+   display: flex;
+   text-decoration: none;
+   justify-content: flex-start;
+ }
+
+  .demo-click span {
+    margin-top: 8px;
+    color: #4B4B4B;
+    opacity: 0.8;
+  }
+
+ .demo-click img {
+   width: 2%;
+   opacity: 0.6;
+   margin: 0 20px 0 0;
+ }
 
 .about {
  font-family: 'Tajawal', sans-serif;
@@ -680,7 +739,7 @@ html, body {
 
   .virtual-tour {
     width: 100%;
-    height: 80vh;
+    height: 55vh;
     margin: 0;
     display:flex;
     justify-content: flex-start;
@@ -807,6 +866,7 @@ nav {
   opacity: 0;
   animation: apparition 0.4s 0.4s ease-out forwards;
 }
+
 
 address > ul {
   list-style-type: none;
