@@ -1,7 +1,12 @@
-/*@font-face {
-  font-family: 'Krona One';
-  src: url("fonts/krona-one.woff") format("woff"),  Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+
-  url("fonts/krona-one.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 }*/
+@font-face {
+font-family: grifter;
+src: url("fonts/grifter.otf") format("opentype");
+}
+
+@font-face {
+font-family: krona one;
+src: url("fonts/krona-one.ttf") format("truetype");
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
@@ -17,7 +22,6 @@
     margin : 0 0 0 100px;
     padding: 0;
     width: 100%;
-    height: 100vh;
     background-color: white;
     color: #4B4B4B;
     font-family: 'Tajawal', sans-serif;
@@ -44,19 +48,20 @@
    position: relative;
    display: flex;
    flex-direction: column;
-   justify-content: flex-start;
+   justify-content: center;
  }
 
  .bloc h1 {
-   display: flex;
-   flex-direction: column;
-   letter-spacing: 3px;
-   line-height: 100px;
-   font-size: 70px;
+  font-family: grifter;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 3px;
+  line-height: 90px;
+  font-size: 70px;
  }
 
  .bloc p {
-   font-size: 30px;
+   font-size: 25px;
    position: relative;
    opacity: 0;
    transform: translateY(-30px);
@@ -142,7 +147,6 @@ iframe {
     margin : 0 0 0 100px;
     padding: 0;
     width: 100%;
-    height: 100vh;
     background-color: white;
     color: #4B4B4B;
     font-family: 'Tajawal', sans-serif;
@@ -169,19 +173,20 @@ iframe {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .bloc h1 {
+  font-family: grifter;
   display: flex;
   flex-direction: column;
   letter-spacing: 3px;
-  line-height: 100px;
-  font-size: 90px;
+  line-height: 80px;
+  font-size: 60px;
 }
 
 .bloc p {
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
   opacity: 0;
   transform: translateY(-30px);
@@ -268,7 +273,6 @@ iframe {
     margin : 0 0 0 60px;
     padding: 0;
     width: 100%;
-    height: 100vh;
     background-color: white;
     color: #4B4B4B;
     font-family: 'Tajawal', sans-serif;
@@ -290,7 +294,7 @@ iframe {
 
   .bloc {
     width: 100%;
-    height: 60vh;
+    height: 500px;
     padding: 0 0 0 30px;
     position: relative;
     display: flex;
@@ -299,6 +303,7 @@ iframe {
   }
 
   .bloc h1 {
+    font-family: grifter;
     display: flex;
     flex-direction: column;
     letter-spacing: 3px;
@@ -330,7 +335,7 @@ iframe {
    }
 
   .demo-click img {
-    width: 2%;
+    width: 4%;
     opacity: 0.6;
     margin: 0 20px 0 0;
   }
@@ -393,7 +398,6 @@ iframe {
       margin : 0 0 0 60px;
       padding: 0;
       width: 100%;
-      height: 100vh;
       background-color: white;
       color: #4B4B4B;
       font-family: 'Tajawal', sans-serif;
@@ -415,7 +419,7 @@ iframe {
 
     .bloc {
       width: 100%;
-      height: 60vh;
+      height: 500px;
       padding: 0 0 0 30px;
       position: relative;
       display: flex;
@@ -511,7 +515,6 @@ iframe {
     margin : 0 0 0 50px;
     padding: 0;
     width: 100%;
-    height: 100vh;
     background-color: white;
     color: #4B4B4B;
     font-family: 'Tajawal', sans-serif;
@@ -542,6 +545,7 @@ iframe {
   }
 
   .bloc h1 {
+    font-family: grifter;
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
@@ -635,10 +639,9 @@ iframe {
 @media (min-width: 320px) and (max-width: 480px) {
 
 html, body {
-  margin : 0 0 0 10px;
+  margin : 0 0 0 30px;
   padding: 0;
   width: 100%;
-  height: 100vh;
   background-color: white;
   color: #4B4B4B;
   font-family: 'Tajawal', sans-serif;
@@ -649,7 +652,7 @@ html, body {
 
 .home {
   width: 100%;
-  height: 76vh;
+  height: 500px;
   margin: 0 0 0 20px;
   padding: 0;
   display: flex;
@@ -658,9 +661,9 @@ html, body {
   align-items: center;
 }
 
-  .bloc {
+.bloc {
   width: 100%;
-  height: 100vh;
+  height: 400px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -668,6 +671,7 @@ html, body {
 }
 
 .bloc h1 {
+  font-family: grifter;
   display: flex;
   flex-direction: column;
   letter-spacing: 3px;
@@ -693,13 +697,14 @@ html, body {
  }
 
   .demo-click span {
-    margin-top: 8px;
+    font-size: 10px;
+    margin-top: 1px;
     color: #4B4B4B;
     opacity: 0.8;
   }
 
  .demo-click img {
-   width: 2%;
+   width: 5%;
    opacity: 0.6;
    margin: 0 20px 0 0;
  }
@@ -740,14 +745,14 @@ html, body {
   .virtual-tour {
     width: 100%;
     height: 55vh;
-    margin: 0;
+    margin: 0 0 20px 0;
     display:flex;
     justify-content: flex-start;
     align-items: center;
   }
 
     iframe {
-    width: 90%;
+    width: 85%;
   }
 
 }
