@@ -2,41 +2,42 @@
 <html>
 <head>
   <meta charset=”UTF-8″>
-  <meta name="viewport" content="width=device-width, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Gallery360 is a Paris based creative studio conceiving 360° and 3D virtual visits.">
   <title>VirtualTour</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-  <nav>
-      <a href="index" class="link link--anim">home</a>
-      <a href="about" class="link link--anim">about</a>
-      <a href="contact" class="link link--anim">contact</a>
-  </nav>
+  <div class="page">
+    <nav>
+        <a href="index" class="link link--anim">home</a>
+        <a href="about" class="link link--anim">about</a>
+        <a href="contact" class="link link--anim">contact</a>
+    </nav>
 
-  <div class="home">
-    <div class="bloc">
-      <h1>
-        <span>360°</span>
-        <span>virtual</span>
-        <span>tour</span>
-      </h1>
-      <p>when art meets augmented reality</p>
-      <div class="demo-click">
-        <a href="#demo"><img src="images/down-arrow.svg" alt="down arrow"><span>see demo</span></a>
+    <div class="home">
+      <div class="bloc">
+        <h1>
+          <span>360°</span>
+          <span>virtual</span>
+          <span>tour</span>
+        </h1>
+        <p>when art meets augmented reality</p>
+        <div class="demo-click">
+          <a href="#demo"><img src="images/down-arrow.svg" alt="down arrow"><span>see demo</span></a>
+        </div>
       </div>
     </div>
-</div>
 
-
-    <div class="virtual-tour">
-      <a name="demo"></a>
-      <iframe src="https://app.lapentor.com/sphere/virtual-tour-test-1614678608"
-      frameborder="0" height="380px" scrolling="no" allow="vr,gyroscope,accelerometer"
-      allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true"
-      msallowfullscreen="true"></iframe>
-    </div>
+      <div class="virtual-tour">
+        <a name="demo"></a>
+        <iframe src="https://app.lapentor.com/sphere/virtual-tour-test-1614678608"
+        frameborder="0" height="360px" scrolling="no" allow="vr,gyroscope,accelerometer"
+        allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true"
+        msallowfullscreen="true"></iframe>
+      </div>
+  </div>
 
   <script>
     window.addEventListener("load", () => {
