@@ -84,7 +84,6 @@ nav {
    margin-bottom: 25px;
  }
 
-
  .demo-click a {
    width: 100%;
    display: flex;
@@ -842,6 +841,7 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  opacity: 0.8;
  }
 
 
@@ -855,12 +855,10 @@ nav {
     font-size: 10px;
     margin-bottom: 2px;
     color: #4B4B4B;
-    opacity: 0.8;
   }
 
  .demo-click img {
    width: 8%;
-   opacity: 0.8;
    margin: 0 10px 0 0;
  }
 
