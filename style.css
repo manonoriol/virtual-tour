@@ -99,7 +99,7 @@ nav {
   }
 
  .demo-click img {
-   width: 2%;
+   width: 1.7%;
    opacity: 0.6;
    margin: 0 20px 0 0;
  }
@@ -700,7 +700,7 @@ iframe {
     }
 
    .demo-click img {
-     width: 4%;
+     width: 6%;
      opacity: 0.6;
      margin: 0 20px 0 0;
    }
@@ -847,14 +847,14 @@ nav {
 
   .demo-click span {
     font-size: 10px;
-    margin-top: 1px;
+    margin-top: 7px;
     color: #4B4B4B;
     opacity: 0.8;
   }
 
  .demo-click img {
-   width: 5%;
-   opacity: 0.6;
+   width: 8%;
+   opacity: 0.8;
    margin: 0 20px 0 0;
  }
 
