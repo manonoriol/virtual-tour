@@ -117,7 +117,7 @@ nav {
 
  .about-text {
    width: 85%;
-   height: 80vh;
+   height: 90vh;
    line-height: 40px;
    text-align: justify;
    display: flex;
@@ -140,7 +140,7 @@ nav {
 
  .contact-text {
    width: 800px;
-   height: 80vh;
+   height: 90vh;
    display: flex;
    justify-content: center;
    align-items: left;
@@ -270,7 +270,7 @@ iframe {
 
 .about-text {
   width: 85%;
-  height: 80vh;
+  height: 90vh;
   line-height: 40px;
   text-align: justify;
   display: flex;
@@ -293,7 +293,7 @@ iframe {
 
 .contact-text {
   width: 800px;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: left;
