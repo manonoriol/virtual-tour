@@ -841,7 +841,7 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  opacity: 0.8;
+  opacity: 0.5;
  }
 
 
@@ -854,7 +854,7 @@ nav {
     top: -7px;
     font-size: 10px;
     margin-bottom: 2px;
-    color: #4B4B4B;
+    color: #000000;
   }
 
  .demo-click img {
