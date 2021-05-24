@@ -2,6 +2,16 @@
 <html>
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JV4G30R7D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4JV4G30R7D');
+  </script>
+
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
   <meta charset=”UTF-8″>
@@ -61,7 +71,43 @@
     },
     "theme": "classic",
     "position": "bottom-right",
-    "type": "opt-in"
+    "type": "opt-in",
+
+    onInitialise: function(status) {
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+            if (type == 'opt-in' && didConsent) {
+                // enable cookies
+                window['ga-disable-G-4JV4G30R7D'] = false;
+            }
+            if (type == 'opt-out' && !didConsent) {
+                // disable cookies
+                console.log('cookies disabled');
+                window['ga-disable-G-4JV4G30R7D'] = true;
+            }
+        },
+        onStatusChange: function(status, chosenBefore) {
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+            if (type == 'opt-in' && didConsent) {
+                window['ga-disable-G-4JV4G30R7D'] = false;
+            }
+            if (type == 'opt-out' && !didConsent) {
+                // disable cookies
+                window['ga-disable-G-4JV4G30R7D'] = true;
+            }
+        },
+        onRevokeChoice: function() {
+            var type = this.options.type;
+            if (type == 'opt-in') {
+                // disable cookies
+                window['ga-disable-G-4JV4G30R7D'] = true;
+            }
+            if (type == 'opt-out') {
+                // enable cookies
+                window['ga-disable-G-4JV4G30R7D'] = false;
+            }
+        },
   });
   </script>
 
