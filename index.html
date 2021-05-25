@@ -78,11 +78,12 @@
             var didConsent = this.hasConsented();
             if (type == 'opt-in' && didConsent) {
                 // enable cookies
+                console.log('cookies ok1')
                 window['ga-disable-G-4JV4G30R7D'] = false;
             }
             if (type == 'opt-out' && !didConsent) {
                 // disable cookies
-                console.log('cookies disabled');
+                console.log('cookies disabled1');
                 window['ga-disable-G-4JV4G30R7D'] = true;
             }
         },
@@ -90,10 +91,12 @@
             var type = this.options.type;
             var didConsent = this.hasConsented();
             if (type == 'opt-in' && didConsent) {
+              console.log('cookies ok2')
                 window['ga-disable-G-4JV4G30R7D'] = false;
             }
             if (type == 'opt-out' && !didConsent) {
                 // disable cookies
+                console.log('cookies disabled2')
                 window['ga-disable-G-4JV4G30R7D'] = true;
             }
         },
@@ -101,10 +104,12 @@
             var type = this.options.type;
             if (type == 'opt-in') {
                 // disable cookies
+                console.log('cookies disabled3')
                 window['ga-disable-G-4JV4G30R7D'] = true;
             }
             if (type == 'opt-out') {
                 // enable cookies
+                console.log('cookies ok3')
                 window['ga-disable-G-4JV4G30R7D'] = false;
             }
         },
