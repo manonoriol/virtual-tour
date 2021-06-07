@@ -55,63 +55,63 @@
           document.body.classList.remove("loading-anim");
       });
     </script>
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-  <script>
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#7f7f7f"
-      },
-      "button": {
-        "background": "#ffffff",
-        "text": "#7F7F7F"
-      }
-    },
-    "theme": "classic",
-    "position": "bottom-right",
-    "type": "opt-out"
-  },
-  onInitialise: function(status) {
-  var type = this.options.type;
-  var didConsent = this.hasConsented();
-  if (type == 'opt-in' && didConsent) {
-  // enable cookies
-  console.log('cookies ok1')
-  window['ga-disable-G-4JV4G30R7D'] = false;
-  }
-  if (type == 'opt-out' && !didConsent) {
-  // disable cookies
-  console.log('cookies disabled1');
-  window['ga-disable-G-4JV4G30R7D'] = true;
-  }
-  },
-  onStatusChange: function(status, chosenBefore) {
-  var type = this.options.type;
-  var didConsent = this.hasConsented();
-  if (type == 'opt-in' && didConsent) {
-  console.log('cookies ok2')
-  window['ga-disable-G-4JV4G30R7D'] = false;
-  }
-  if (type == 'opt-out' && !didConsent) {
-  // disable cookies
-  console.log('cookies disabled2')
-  window['ga-disable-G-4JV4G30R7D'] = true;
-  }
-  },
-  onRevokeChoice: function() {
-  var type = this.options.type;
-  if (type == 'opt-in') {
-  // disable cookies
-  console.log('cookies disabled3')
-  window['ga-disable-G-4JV4G30R7D'] = true;
-  }
-  if (type == 'opt-out') {
-  // enable cookies
-  console.log('cookies ok3')
-  window['ga-disable-G-4JV4G30R7D'] = false;
-      }
-    },
-  );
-  </script>
+   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+   <script>
+   window.cookieconsent.initialise({
+     "palette": {
+       "popup": {
+         "background": "#7f7f7f"
+       },
+       "button": {
+         "background": "#ffffff",
+         "text": "#7f7f7f"
+       }
+     },
+     "theme": "classic",
+     "position": "bottom-right",
+     "type": "opt-in",
+     onInitialise: function(status) {
+             var type = this.options.type;
+             var didConsent = this.hasConsented();
+             if (type == 'opt-in' && didConsent) {
+                 // enable cookies
+                 console.log('cookies ok1')
+                 window['ga-disable-G-4JV4G30R7D'] = false;
+             }
+             if (type == 'opt-out' && !didConsent) {
+                 // disable cookies
+                 console.log('cookies disabled');
+                 console.log('cookies disabled1');
+                 window['ga-disable-G-4JV4G30R7D'] = true;
+             }
+         },
+         onStatusChange: function(status, chosenBefore) {
+             var type = this.options.type;
+             var didConsent = this.hasConsented();
+             if (type == 'opt-in' && didConsent) {
+               console.log('cookies ok2')
+                 window['ga-disable-G-4JV4G30R7D'] = false;
+             }
+             if (type == 'opt-out' && !didConsent) {
+                 // disable cookies
+                 console.log('cookies disabled2')
+                 window['ga-disable-G-4JV4G30R7D'] = true;
+             }
+         },
+         onRevokeChoice: function() {
+             var type = this.options.type;
+             if (type == 'opt-in') {
+                 // disable cookies
+                 console.log('cookies disabled3')
+                 window['ga-disable-G-4JV4G30R7D'] = true;
+             }
+             if (type == 'opt-out') {
+                 // enable cookies
+                 console.log('cookies ok3')
+                 window['ga-disable-G-4JV4G30R7D'] = false;
+             }
+         },
+   });
+   </script>
   </body>
 </html>
