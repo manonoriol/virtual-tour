@@ -120,7 +120,6 @@ nav {
    width: 85%;
    height: 90vh;
    line-height: 40px;
-   text-align: justify;
    display: flex;
    justify-content: center;
    flex-direction: column;
